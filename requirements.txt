@@ -1,4 +1,6 @@
 django
+gunicorn
+django-heroku
 textblob
 pandas
 matplotlib
