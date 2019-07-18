@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Login | BookBuddyWeb</title>
+	<link href="{% static 'css/login.css/' %}" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background:url("{% static 'image/background.jpg/' %}");
+			background-size: cover;
+			font-family: sans-serif;
+			color: #fff;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="signin">
+		<img src="{% static 'image/user.png/' %}" class="user">
+		<form method="post" action="/user/verify/">
+			{% csrf_token %}
+			<h2>Log In</h2>
+			<p>Phone</p>
+			<input type="text" name="mail" placeholder="User Phone number" />
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Password" />
+			<input type="submit" value="Log In">
+			<a href="/user/reset" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset password?</a>
+			<a href="/user/forgot" style=" margin-left:5px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget password?</a>
+			<br /><br />
+			<a href="/user/Signup" style="font-family:'Play', sans-serif;">&nbsp;Don't have account? Sign Up</a>
+
+		</form>
+	</div>
+
+</body>
+
+</html>

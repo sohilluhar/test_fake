@@ -1,0 +1,29 @@
+<html>
+<head>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'fakenews/style.css' %}" type="text/css">
+</head>
+<body class="body">
+  <h1>Fake News Detection</h1>
+</body>
+<form method="post" action="/result/" id="txt">
+<div class="main">
+<p >{% csrf_token %}</p>
+<input placeholder="&nbsp" type="text" name="news" value="{{request.form.news}}" required>
+<label class="hello">Enter News Here</label>
+<span class="enter"></span>
+
+<br><br>
+
+  <div class="container-2">
+  <div class="btn btn-two" >
+<span>
+ <input class="btn" type="submit" value="👉🏻submit"></span>
+</div>
+</div>
+</div>
+
+</form>
+  </section> 
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'fakenews/style.css' %}" type="text/css">
+</head>
+<body class="body">
+  <h1>Fake News Detection</h1>
+</body>
+
+<div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="p"><b>Result of News</b></p>
+<p class="p1">
+The given news📰📚 is 📖🔖:-👉🏻 {{news}}<br>
+The given statement is 💯 :- {{ ns1 }} <br>
+The truth probability score is 👨🏻‍🏫:- {{ ns2 }}<br>
+</p>
+<p class="p"><b>👇🏻Live Streaming Tweets of given news is👇🏻</b></p>
+<p class="p1">
+{{re}}</p>
+    
+
+<br>
+<br>
+<form action="http://127.0.0.1:8000/">
+
+  <div class="container-2">
+  <div class="btn btn-two" >
+<span>
+ <input class="btn" type="submit" value="Search other news"></span>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</html>
