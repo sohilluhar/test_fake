@@ -5,6 +5,4 @@ matplotlib
 tweepy
 numpy
 tweepy
-scikitlearn
-sklearn
-seaborn
+scikit-learn
