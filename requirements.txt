@@ -1,1 +1,10 @@
-python-3.7.3
+django
+textblob
+pandas
+matplotlib
+tweepy
+numpy
+tweepy
+scikitlearn
+sklearn
+seaborn
