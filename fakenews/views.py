@@ -11,6 +11,7 @@ def result(request):
 	if news!= None:
 		print ("in if")
 		ns=prediction.detecting_fake_news(news)
+		a=main.analysis1()
 		re=a.dd(news)
 
 	else:
