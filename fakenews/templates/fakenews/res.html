@@ -1,42 +1,48 @@
+{% load static %}
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fake News Detection</title>
+<link href="{% static 'fakenews/res.css' %}" rel="stylesheet" type="text/css"/>
+<link href="static/css/cong.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<style>
+body
+{
+  margin:0;
+	padding:0;
+  
+		background:url("{% static 'fakenews/res.jpg' %}");
+			
+	background-size:cover;
+	font-family: sans-serif;
+	color:#fff;
+	text-align:center;
+}
 
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'fakenews/style.css' %}" type="text/css">
+
+
+</style>
 </head>
-<body class="body">
-  <h1>Fake News Detection</h1>
-</body>
 
-<div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p class="p"><b>Result of News</b></p>
-<p class="p1">
-The given news📰📚 is 📖🔖:-👉🏻 {{news}}<br>
-The given statement is 💯 :- {{ ns1 }} <br>
-The truth probability score is 👨🏻‍🏫:- {{ ns2 }}<br>
-</p>
-<p class="p"><b>👇🏻Live Streaming Tweets of given news is👇🏻</b></p>
-<p class="p1">
-{{re}}</p>
+<body>
+		<div class="cong">
+		<p >{% csrf_token %}</p>
+		<h2><b>Result of News</b></h2>
+        <p class="p2">The given news is {{news}} </p>
+        <p class="p2">The given statement is  :- {{ ns1 }}<br>
+			The truth probability score is :- {{ ns2 }}</p>
+		<br>
+		{% if re %}
+		<h2>Live Streaming Tweets of given news is</h2>
+		<p class="p2">
+		{{re}}</p>
+		{% endif %}
+		<br>
+       
+        <a href="/">
+        <button type="button" name="button" class="buttons">Check other news</button></a>
+   </div>
     
-
-<br>
-<br>
-<form action="https://fake-news-detection1.herokuapp.com/">
-
-  <div class="container-2">
-  <div class="btn btn-two" >
-<span>
- <input class="btn" type="submit" value="Search other news"></span>
-</div>
-</div>
-</div>
-</form>
-</div>
-</div>
+</body>
 </html>

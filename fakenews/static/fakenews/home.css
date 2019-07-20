@@ -1,0 +1,97 @@
+
+.signin
+{
+   	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:1200px;
+	height:340px;
+	padding:80px 40px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,0.5) ;
+	border-radius:10px;
+}
+
+.signin input
+{
+	width:100%;
+	margin-bottom: 20px;
+}
+.signin input[type="text"], .signin input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size: 16px;
+	margin-right: 0 !important;
+}
+
+
+.signin input[type="submit"]
+{
+	border:none;
+	outline:none;
+	height: 40px;
+	color:#fff;
+	width:25%;
+	font-size:16px;
+	background: #324A5E ;
+	cursor:pointer;
+	border-radius:20px;
+}
+
+
+.signin input[type="submit"]:hover
+{
+	background: #ffff;
+	color: #262626;
+}
+.signin h2
+{
+    margin:0;
+	padding:0 0 20px;
+	color:#fff;
+	text-align:center;
+
+}
+.signin p
+{
+	padding:0;
+	margin:0;
+	font-weight:bold;
+	color:#fff;
+	text-align:left;
+
+}
+
+.signin a
+{
+	color: #fff;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.signin a:hover
+{
+    color: skyblue;
+}
+
+::placeholder
+{
+	color:rgba(255,255,255,0.5);
+}
+
+.user
+{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	position:absolute;
+	top:calc(-100px/2);
+	left:calc(50% - 50px);
+	border-radius:50%;
+}
