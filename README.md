@@ -1,5 +1,11 @@
 # FakeNews
 
+This is python based project.
+
+
+It is used to detect whther news is true of false 
+
+
 Prequisite
 pyhton3.6
 
